@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 from __future__ import print_function
 
-from gilded_rose import *
+from inventory import Inventory
+from item import Item
 
 if __name__ == "__main__":
     print ("OMGHAI!")
@@ -27,4 +28,4 @@ if __name__ == "__main__":
         for item in items:
             print(item)
         print("")
-        GildedRose(items).update_quality()
+        Inventory(items).update()
